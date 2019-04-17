@@ -3,7 +3,7 @@
   <input type='submit' id='submit'>
 </form>
 
-<% if @session[:item] %>
+<% if @session.has_key? :item %>
     <h3>Hero Name: <%= member.name %></h3>
     <h4>Hero Power: <%= member.power %></h4>
     <h4>Hero Biography: <%= member.bio %></h4>
